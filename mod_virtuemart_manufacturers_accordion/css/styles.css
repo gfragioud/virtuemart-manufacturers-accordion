@@ -1,0 +1,33 @@
+.vmmanufacturer_header {
+	color: #333;
+	cursor: pointer;
+	display: block;
+	font-size: 2em;
+	line-height: 2em;
+}
+.vmmanufacturer_header > .icon-double-angle-right {
+	margin-left: 10px;
+}
+.vmmanufacturer_header > .icon-double-angle-right:before {
+	transition: transform 0.5s ease-in;
+}
+.vmmanufacturers {
+	max-height: 164px; /* 100px the row + 24px the header */
+	overflow: hidden;
+	transition: all 0.5s ease-in;
+}
+.vmmanufacturers-expanded {
+	max-height: 1064px; /* 10 rows at most */
+}
+
+.vmmanufacturer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.vmmanufacturer div {
+	align-items: center;
+	display: flex;
+	flex: 1;
+	max-width: 100px;
+}

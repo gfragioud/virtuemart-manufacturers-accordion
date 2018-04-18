@@ -1,0 +1,15 @@
+<updates>
+	<update>
+		<name>Virtuemart Manufacturers Accordion</name>
+		<description>MOD_VIRTUEMART_MANUFACTURERS_ACCORDION_DESC</description>
+		<element>mod_virtuemart_manufacturers_accordion</element>
+		<type>module</type>
+		<version>1.0.1</version>
+		<downloads>
+			<downloadurl type="full" format="zip">https://github.com/gfragioud/virtuemart-manufacturers-accordion/blob/master/mod_virtuemart-manufacturers-accordion.zip</downloadurl>
+		</downloads>
+		<maintainer>Ioannis Fragkioudakis</maintainer>
+		<targetplatform name="joomla" version="3.[0123456789]"/>
+		<client>site</client>
+	</update>
+</updates>

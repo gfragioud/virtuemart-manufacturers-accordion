@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5.0" client="site" method="upgrade">
+  <name>Virtuemart Manufacturers Accordion</name>
+  <creationDate>April 17 2018</creationDate>
+  <author>Ioannis Fragkioudakis</author>
+  <copyright>Copyright (C) 2018 Ioannis Fragkioudakis. All rights reserved.</copyright>
+  <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+  <version>1.0.1</version>
+  <description>MOD_VIRTUEMART_MANUFACTURERS_ACCORDION_DESC</description>
+  <files>
+    <filename module="mod_virtuemart_manufacturers_accordion">mod_virtuemart_manufacturers_accordion.php</filename>
+    <filename>helper.php</filename>
+    <filename>tmpl/default.php</filename>
+    <filename>css/styles.css</filename>
+    <folder>language</folder>
+  </files>
+  <params>
+    <param
+      name="show"
+      type="list"
+      default="image"
+      label="MOD_VIRTUEMART_MANUFACTURERS_ACCORDION_SHOW"
+      description="MOD_VIRTUEMART_MANUFACTURERS_ACCORDION_SHOW_DESC"
+      >
+      <option value="all">MOD_VIRTUEMART_MANUFACTURERS_ACCORDION_IMAGE_NAME</option>
+      <option value="image">MOD_VIRTUEMART_MANUFACTURERS_ACCORDION_THUMB_IMAGE</option>
+      <option value="text">MOD_VIRTUEMART_MANUFACTURERS_ACCORDION_NAME</option>
+    </param>
+    <param
+      name="display_style"
+      type="list"
+      default="div"
+      label="MOD_VIRTUEMART_MANUFACTURERS_ACCORDION_DISPLAY_STYLE"
+      description="MOD_VIRTUEMART_MANUFACTURERS_ACCORDION_DISPLAY_STYLE_DESC"
+      >
+      <option value="list">MOD_VIRTUEMART_MANUFACTURERS_ACCORDION_LIST</option>
+      <option value="div">MOD_VIRTUEMART_MANUFACTURERS_ACCORDION_DIV</option>
+    </param>
+    <param
+      name="manufacturers_per_row"
+      type="text"
+      default="10"
+      label="MOD_VIRTUEMART_MANUFACTURERS_ACCORDION_ROW"
+      description="MOD_VIRTUEMART_MANUFACTURERS_ACCORDION_ROW_DESC"
+    />
+    <param
+      name="@spacer"
+      type="spacer"
+      default=""
+      label=""
+      description=""
+    />
+    <param
+      name="headerText"
+      type="textarea"
+      cols="40"
+      rows="3"
+      default="Εταιρείες"
+      label="MOD_VIRTUEMART_MANUFACTURERS_ACCORDION_HEADER_TEXT"
+      description="MOD_VIRTUEMART_MANUFACTURERS_ACCORDION_HEADER_TEXT_DESC"
+    />
+    <param
+      name="footerText"
+      type="textarea"
+      cols="40"
+      rows="3"
+      default=""
+      label="MOD_VIRTUEMART_MANUFACTURERS_ACCORDION_FOOTER_TEXT"
+      description="MOD_VIRTUEMART_MANUFACTURERS_ACCORDION_FOOTER_TEXT_DESC"
+    />
+  </params>
+  <params group="advanced">
+    <param
+      name="cache"
+      type="radio"
+      default="0"
+      label="Enable Cache"
+      description="Select whether to cache the content of this module"
+      >
+      <option value="0">No</option>
+      <option value="1">Yes</option>
+    </param>
+    <param
+      name="moduleclass_sfx"
+      type="text"
+      default=""
+      label="Module Class Suffix"
+      description="A suffix to be applied to the css class of the module (table.moduletable), this allows individual module styling"
+    />
+    <param
+      name="class_sfx"
+      type="text"
+      default=""
+      label="Menu Class Suffix"
+      description="A suffix to be applied to the css class of the menu items"
+    />
+  </params>
+  <config>
+    <fields name="params">
+      <fieldset name="basic">
+        <field
+          name="show"
+          type="list"
+          default="image"
+          label="MOD_VIRTUEMART_MANUFACTURERS_ACCORDION_SHOW"
+          description="MOD_VIRTUEMART_MANUFACTURERS_ACCORDION_SHOW_DESC"
+          >
+          <option value="all">MOD_VIRTUEMART_MANUFACTURERS_ACCORDION_IMAGE_NAME</option>
+          <option value="image">MOD_VIRTUEMART_MANUFACTURERS_ACCORDION_THUMB_IMAGE</option>
+          <option value="text">MOD_VIRTUEMART_MANUFACTURERS_ACCORDION_NAME</option>
+        </field>
+        <field
+          name="display_style"
+          type="list"
+          default="div"
+          label="MOD_VIRTUEMART_MANUFACTURERS_ACCORDION_DISPLAY_STYLE"
+          description="MOD_VIRTUEMART_MANUFACTURERS_ACCORDION_DISPLAY_STYLE_DESC"
+          >
+          <option value="list">MOD_VIRTUEMART_MANUFACTURERS_ACCORDION_LIST</option>
+          <option value="div">MOD_VIRTUEMART_MANUFACTURERS_ACCORDION_DIV</option>
+        </field>
+        <field
+          name="manufacturers_per_row"
+          type="text"
+          default="10"
+          label="MOD_VIRTUEMART_MANUFACTURERS_ACCORDION_ROW"
+          description="MOD_VIRTUEMART_MANUFACTURERS_ACCORDION_ROW_DESC"
+        />
+        <field
+          name="@spacer"
+          type="spacer"
+          default=""
+          label=""
+          description=""
+        />
+        <field
+          name="headerText"
+          type="textarea"
+          cols="40"
+          rows="3"
+          default="Εταιρείες"
+          label="MOD_VIRTUEMART_MANUFACTURERS_ACCORDION_HEADER_TEXT"
+          description="MOD_VIRTUEMART_MANUFACTURERS_ACCORDION_HEADER_TEXT_DESC"
+        />
+        <field
+          name="footerText"
+          type="textarea"
+          cols="40"
+          rows="3"
+          default=""
+          label="MOD_VIRTUEMART_MANUFACTURERS_ACCORDION_FOOTER_TEXT"
+          description="MOD_VIRTUEMART_MANUFACTURERS_ACCORDION_FOOTER_TEXT_DESC"
+        />
+      </fieldset>
+      <fieldset name="advanced">
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC"
+        />
+        <field
+          name="cache"
+          type="list"
+          default="1"
+          label="COM_MODULES_FIELD_CACHING_LABEL"
+          description="COM_MODULES_FIELD_CACHING_DESC"
+          >
+          <option value="0">No</option>
+          <option value="1">Yes</option>
+        </field>
+        <field
+          name="moduleclass_sfx"
+          type="text" default=""
+          label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+          description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC"
+        />
+        <field
+          name="class_sfx"
+          type="text"
+          default=""
+          label="Menu Class Suffix"
+          description="A suffix to be applied to the css class of the menu items"
+        />
+      </fieldset>
+    </fields>
+  </config>
+  <updateservers>
+		<server type="extension" priority="1" name="My Extension's Updates">https://github.com/gfragioud/virtuemart-manufacturers-accordion/blob/master/mod_virtuemart_manufacturers_accordion_update.xml</server>
+	</updateservers>
+</extension>
