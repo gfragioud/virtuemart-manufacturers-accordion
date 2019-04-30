@@ -186,6 +186,6 @@
     </fields>
   </config>
   <updateservers>
-		<server type="extension" priority="1" name="My Extension's Updates">https://github.com/gfragioud/virtuemart-manufacturers-accordion/blob/master/mod_virtuemart_manufacturers_accordion_update.xml</server>
+		<server type="extension" priority="1" name="virtuemart-manufacturers-accordion update site">https://github.com/gfragioud/virtuemart-manufacturers-accordion/blob/master/mod_virtuemart_manufacturers_accordion_update.xml</server>
 	</updateservers>
 </extension>
