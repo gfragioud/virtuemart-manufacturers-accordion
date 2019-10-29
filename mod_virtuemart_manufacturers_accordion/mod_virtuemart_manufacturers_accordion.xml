@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension type="module" version="2.5.0" client="site" method="upgrade">
+<extension type="module" version="3.8.0" client="site" method="upgrade">
   <name>Virtuemart Manufacturers Accordion</name>
   <creationDate>April 17 2018</creationDate>
   <author>Ioannis Fragkioudakis</author>
   <copyright>Copyright (C) 2018 Ioannis Fragkioudakis. All rights reserved.</copyright>
   <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
-  <version>1.0.2</version>
+  <version>1.0.3</version>
   <description>MOD_VIRTUEMART_MANUFACTURERS_ACCORDION_DESC</description>
   <files>
     <filename module="mod_virtuemart_manufacturers_accordion">mod_virtuemart_manufacturers_accordion.php</filename>
