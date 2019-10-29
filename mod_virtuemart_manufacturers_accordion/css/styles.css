@@ -12,12 +12,12 @@
 	transition: transform 0.5s ease-in;
 }
 .vmmanufacturers {
-	max-height: 164px; /* 100px the row + 24px the header */
+	max-height: 164px; /* 100px the row + 64px the header */
 	overflow: hidden;
 	transition: all 0.5s ease-in;
 }
 .vmmanufacturers-expanded {
-	max-height: 1064px; /* 10 rows at most */
+	max-height: 1264px; /* 12 rows at most */
 }
 
 .vmmanufacturer {
