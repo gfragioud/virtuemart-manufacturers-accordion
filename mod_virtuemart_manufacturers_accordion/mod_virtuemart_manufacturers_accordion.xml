@@ -7,6 +7,7 @@
   <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
   <version>1.0.3</version>
   <description>MOD_VIRTUEMART_MANUFACTURERS_ACCORDION_DESC</description>
+  <element>mod_virtuemart_manufacturers_accordion</element>
   <files>
     <filename module="mod_virtuemart_manufacturers_accordion">mod_virtuemart_manufacturers_accordion.php</filename>
     <filename>helper.php</filename>
