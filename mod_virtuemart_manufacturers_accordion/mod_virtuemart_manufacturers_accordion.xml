@@ -5,7 +5,7 @@
   <author>Ioannis Fragkioudakis</author>
   <copyright>Copyright (C) 2018 Ioannis Fragkioudakis. All rights reserved.</copyright>
   <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
-  <version>1.0.3</version>
+  <version>1.0.4</version>
   <description>MOD_VIRTUEMART_MANUFACTURERS_ACCORDION_DESC</description>
   <element>mod_virtuemart_manufacturers_accordion</element>
   <files>
@@ -187,6 +187,6 @@
     </fields>
   </config>
   <updateservers>
-		<server type="extension" priority="1" name="virtuemart-manufacturers-accordion update site">https://raw.githubusercontent.com/gfragioud/virtuemart-manufacturers-accordion/master/mod_virtuemart_manufacturers_accordion_update.xml</server>
+		<server type="extension" priority="1" name="virtuemart-manufacturers-accordion update site">https://github.com/gfragioud/virtuemart-manufacturers-accordion/blob/master/mod_virtuemart_manufacturers_accordion_update.xml</server>
 	</updateservers>
 </extension>

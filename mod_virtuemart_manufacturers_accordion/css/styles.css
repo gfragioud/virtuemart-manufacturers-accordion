@@ -17,7 +17,7 @@
 	transition: all 0.5s ease-in;
 }
 .vmmanufacturers-expanded {
-	max-height: 1264px; /* 12 rows at most */
+	max-height: 1300px; /* 12 rows at most */
 }
 
 .vmmanufacturer {
